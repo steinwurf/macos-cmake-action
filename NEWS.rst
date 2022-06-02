@@ -6,7 +6,8 @@ every change, see the Git log.
 
 Latest
 ------
-* Major: Added ARM runner to workflow.
+* Major: Added ARM runner to workflow. Changed structure to depend on macOS
+         version (e.g Big Sur)
 
 2.0.0
 -----
