@@ -22,7 +22,7 @@ jobs:
             name: Apple CMake (x86)
 
     runs-on: [self-hosted, "${{ matrix.config.os }}", "${{ matrix.config.arch }}", cmake, builder]
-    name: ${{ matrix.config.os }}
+    name: ${{ matrix.config.name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
