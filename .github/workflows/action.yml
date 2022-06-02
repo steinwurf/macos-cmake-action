@@ -12,7 +12,16 @@ jobs:
   macos_cmake:
     strategy:
       fail-fast: false
-    runs-on: [self-hosted, macOS_X64, cmake, builder]
+      matrix:
+        config:
+          - arch: ARM64
+            os: macOS
+            name: Apple CMake (ARM)
+          - arch: x64
+            os: macOS
+            name: Apple CMake (x86)
+
+    runs-on: [self-hosted, "${{ matrix.config.os }}", "${{ matrix.config.arch }}", cmake, builder]
     name: ${{ matrix.os }}
     steps:
       - name: Checkout
