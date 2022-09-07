@@ -10,6 +10,7 @@ env:
   EXTRA_RESOLVE_OPTIONS: ${{ github.event.inputs.extra_resolve_options }}
 jobs:
   macos_cmake:
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
