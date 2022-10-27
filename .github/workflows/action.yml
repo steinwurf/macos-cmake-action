@@ -29,7 +29,7 @@ jobs:
     name: ${{ matrix.config.name }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: CMake & Clang versions
         run: |
           cmake --version
