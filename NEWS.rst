@@ -8,6 +8,11 @@ Latest
 ------
 * tbd
 
+6.1.0
+-----
+* Minor: Added optional parameter to specify if the tests should be run with
+         CTest
+
 6.0.0
 -----
 * Major: Remove x86 from the builds
